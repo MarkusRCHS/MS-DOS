@@ -5,7 +5,7 @@
         <title>MS-DOS</title>
       <style>
           
-ul {
+.navigation_bar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -15,11 +15,11 @@ ul {
     width: 100%
 }
 
-li {
+.pages li {
     float: left;
 }
 
-li a {
+.pages li a {
     display: block;
     color: white;
     text-align: center;
@@ -27,7 +27,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.pages li a:hover {
     background-color: #111;
 }
 .active {
@@ -61,11 +61,11 @@ li.dropdown {
           }
           
 p.info {
-    font-size: 20px;
+    font-size: 30px;
     padding: 20px;
           }
 h1 {
-     font-size: 100px
+     font-size: 125px
      text: center;
      padding: 40px;
           }
@@ -74,14 +74,15 @@ h1 {
      float: right;
      margin: 0 0 10px 10px;
           }
+
 </style>
 </head>
 <body>
 
-<ul>
-  <li><a class="active" href="index.html">MS-DOS</a></li>
-  <li><a href="inventor.html">Microsoft</a></li>
-    <li><a href="bib.html">Bibliography</a></li>
+<ul class="navigation_bar">
+  <li class="pages"><a class="active" href="index.html">MS-DOS</a></li>
+  <li class="pages"><a href="inventor.html">Microsoft</a></li>
+    <li class="pages"><a href="bib.html">Bibliography</a></li>
       <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Other Microsoft Inventions</a>
     <div class="dropdown-content">
@@ -90,7 +91,7 @@ h1 {
     </div>
   </li>
 </ul>
-        <h1 id="ms-dos">
+        <h1>
             What is MS-DOS?
         </h1>
         <img class="pictures_videos" src="http://orig08.deviantart.net/d3fb/f/2009/043/1/1/ms_dos_logo_by_cyberaxe.png">
@@ -100,7 +101,39 @@ h1 {
           by Microsoft. In spite of its very small size and relative simplicity, MS-DOS became a very successful operating sytem that led
           to the development of many other operating systems; DR-DOS, FreeDOS, OpenDOS and PC-DOS.
             <!-- Information found at http://www.linfo.org/ms-dos.html -->
-        </p> 
+        </p>
+        <h1>
+            History of MS-DOS
+        </h1>
+        <p class="info">
+          In 1981 Microsoft purchased QDOS from Seattle Computer Products, renaming it MS-DOS 1.0 and offering it to IBM for use in their
+          new personal computers. In a prescient move, Gates retained the licensing for MS-DOS and it would become the most important
+          factor in Microsoft's move from a simple vendor of computer programming languages to a giant in the computer software industry.
+          The success of MS-DOS directly paralleled the growing popularity of the personal home computer, and remained Microsoft's most 
+          significant source of income even after the firm began to introduce its own GUI in the form of MS-Windows.
+        </p>
+        <h1>
+            MS-DOS Commands 
+        </h1>
+        <p class="info">
+          MS-DOS has a relatively small number of commands, and an even smaller number of commonly used ones. Moreover, these commands
+          are generally inflexible because, in contrast to Linux and other Unix-like operating systems, they are designed to 
+          accommodate few options or arguments (i.e., values that can be passed to the commands).<br>Some of the most common commands 
+          are as follows (corresponding commands on Unix-like operating systems are shown in parenthesis):
+        </p>
+        <ul>
+<li>CD - changes the current directory (cd)</li> 
+<li>COPY - copies a file (cp) </li> 
+<li>DEL - deletes a file (rm) </li> 
+<li>DIR - lists directory contents (ls)</li>  
+<li>EDIT - starts an editor to create or edit plain text files (vi, vim, ed, joe)</li>  
+<li>FORMAT - formats a disk to accept DOS files (mformat) </li> 
+<li>HELP - displays information about a command (man, info) </li> 
+<li>MKDIR - creates a new directory (mkdir) </li> 
+<li>RD - removes a directory (rmdir) </li> 
+<li>REN - renames a file (mv) </li> 
+<li>TYPE - displays contents of a file on the screen (more, cat)</li> 
+          
         <iframe class="pictures_videos" width="472.5" height="415" src="https://www.youtube.com/embed/1bKNts8liWI?autoplay=1">
         </iframe>
 
