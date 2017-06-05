@@ -2,10 +2,95 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>New Webpage</title>
-    </head>
-    <body>
+        <title>MS-DOS</title>
+      <style>
+          
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed
+    width: 100%
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+          }
+          
+.info {
+    font-size: 20px
+    float: left
+    width: 60%
+          }
+h1 {
+     font-size: 50px
+     text-align: center;
+          }
+#ms-dos_logo {
+     width: 200px;
+          }
+</style>
+</head>
+<body>
 
-    
+<ul>
+  <li><a href="index.html">MS-DOS</a></li>
+  <li><a href="inventor.html">Microsoft</a></li>
+    <li><a class="active" href="bib.html">Bibliography</a></li>
+      <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Other Microsoft Inventions</a>
+    <div class="dropdown-content">
+      <a href="micro_bit">Micro Bit</a>
+      <a href="microsoft_band">Microsoft Band</a>
+    </div>
+  </li>
+</ul>
+        <h1>
+            Microsoft
+        </h1>   
+        <p>
+          Microsoft is a Technology corporation that focuses on the the development and selling of software, consumer electronics and 
+          personal computers and services. Microsoft was founded by Bill Gates and Paul Allen on April 4, 1975, in Albuquerque, New 
+          Mexico, United States. The Microsoft Corporation is one of the largest and most influential companies in the personal 
+          computer industry. In addition to developing the de facto standard operating systems -- DOS and Windows-- Microsoft has a 
+          strong presence in almost every area of computer software, from programming tools to end-user applications.
+            <!-- Information found at http://www.webopedia.com/TERM/M/Microsoft.html -->
+        </p>
     </body>
 </html>
