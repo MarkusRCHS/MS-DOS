@@ -74,7 +74,21 @@ h1 {
      float: right;
      margin: 0 0 10px 10px;
           }
+ul.list {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+}
 
+li.item { 
+    padding-left: 16px; 
+}
+
+li.item:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: green; /* Or a color you prefer */
+}
 </style>
 </head>
 <body>
@@ -121,18 +135,18 @@ h1 {
           accommodate few options or arguments (i.e., values that can be passed to the commands).<br>Some of the most common commands 
           are as follows (corresponding commands on Unix-like operating systems are shown in parenthesis):
         </p>
-        <ul>
-<li>CD - changes the current directory (cd)</li> 
-<li>COPY - copies a file (cp) </li> 
-<li>DEL - deletes a file (rm) </li> 
-<li>DIR - lists directory contents (ls)</li>  
-<li>EDIT - starts an editor to create or edit plain text files (vi, vim, ed, joe)</li>  
-<li>FORMAT - formats a disk to accept DOS files (mformat) </li> 
-<li>HELP - displays information about a command (man, info) </li> 
-<li>MKDIR - creates a new directory (mkdir) </li> 
-<li>RD - removes a directory (rmdir) </li> 
-<li>REN - renames a file (mv) </li> 
-<li>TYPE - displays contents of a file on the screen (more, cat)</li> 
+        <ul class="list">
+<li class="item">CD - changes the current directory (cd)</li> 
+<li class="item">COPY - copies a file (cp) </li> 
+<li class="item">DEL - deletes a file (rm) </li> 
+<li class="item">DIR - lists directory contents (ls)</li>  
+<li class="item">EDIT - starts an editor to create or edit plain text files (vi, vim, ed, joe)</li>  
+<li class="item">FORMAT - formats a disk to accept DOS files (mformat) </li> 
+<li class="item">HELP - displays information about a command (man, info) </li> 
+<li class="item">MKDIR - creates a new directory (mkdir) </li> 
+<li class="item">RD - removes a directory (rmdir) </li> 
+<li class="item">REN - renames a file (mv) </li> 
+<li class="item">TYPE - displays contents of a file on the screen (more, cat)</li> 
           
         <iframe class="pictures_videos" width="472.5" height="415" src="https://www.youtube.com/embed/1bKNts8liWI?autoplay=1">
         </iframe>
