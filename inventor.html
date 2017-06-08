@@ -6,7 +6,7 @@
         <title>MS-DOS</title>
       <style>
           
-ul {
+ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -15,17 +15,18 @@ ul {
     position: fixed
     width: 100%
 }
-li {
+ li {
     float: left;
+    font: 20px
 }
-li a {
+ li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-li a:hover {
+ li a:hover {
     background-color: #111;
 }
 .active {
@@ -54,18 +55,36 @@ li.dropdown {
     display: block;
           }
           
-.info {
-    font-size: 20px
-    float: left
-    width: 60%
+p {
+    font-size: 30px;
+    padding: 20px;
           }
 h1 {
-     font-size: 50px
-     text-align: center;
+     font-size: 100px
+     text: center;
+     padding: 40px;
           }
-#ms-dos_logo {
-     width: 200px;
+.pictures_videos {
+     width: 500px;
+     float: right;
+     margin: 0 0 10px 10px;
           }
+ ul.list {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+ li.item { 
+    padding-left: 16px;
+    display: inline;
+    font size: 20;
+}
+ li.item:before {
+    content: "•"; 
+    padding-right: 8px;
+    color: green; 
+}
 </style>
 </head>
 <body>
